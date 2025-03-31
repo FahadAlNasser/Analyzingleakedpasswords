@@ -16,7 +16,7 @@ def password_analysis(passwordinfo):
   for var in varities:
     leakedpass, passwOrd = var.split(':')
     if leakedpass == B:
-      return f"The password is found in: {passwOrd} = leaks. You should consider changing the password."
+      return f"The password is found in: {passwOrd} = the password has appeared in that total number. You should consider changing the password."
   return f"The password {passwordinfo} is not found in the breaches database."
 
 passwordinfo1 = input("Please type the first password for processing:")
